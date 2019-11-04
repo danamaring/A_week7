@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 
 //dynamic stuff
 //this resolves to localhost:3000/id (whatever you put after the slash in the location bar)
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
